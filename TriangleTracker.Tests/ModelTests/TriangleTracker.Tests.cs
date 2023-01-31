@@ -42,11 +42,11 @@ namespace TriangleTracker.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual("Hey, this ain't no got dang triangle", testTriangle.TriangleType(50,4,5));
     }
-    // [TestMethod]
-    // public void TriangleType_HasTypeScalene_Scalene()
-    // {
-    //   Triangle testTriangle = new Triangle();
-    //   Assert.AreEqual("Scalene", testTriangle.TriangleType(3,4,5));
-    // }
+    [TestMethod]
+    public void TriangleType_HasTypeScalene_Scalene()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual("Scalene", testTriangle.TriangleType(3,4,5));
+    }
   }
 }
