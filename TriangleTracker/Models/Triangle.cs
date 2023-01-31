@@ -22,8 +22,7 @@ namespace TriangleTracker
     }
     public string TriangleType(int side1, int side2, int side3)
     {
-      return "";
-      //return "Hey, this ain't no got dang triangle";
+      return "Hey, this ain't no got dang triangle";
       // if (!IsTriangle)
       // {
       //   return "Hey, this ain't no got dang triangle";
