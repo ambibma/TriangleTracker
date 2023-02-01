@@ -56,10 +56,29 @@ namespace TriangleTracker
       {
         return "Equilateral";
       }
-      else
-      {
-        return "";
-      }
+      return "Isosceles";
+
     }
   }
 }
+
+// if (!IsTriangle(side1, side2, side3))
+// {
+//   return "Hey, this ain't no gorram triangle";
+// }
+// HashSet<int> sideLengths = new HashSet<int>;
+// sideLengths.Add(side1);
+// sideLengths.Add(side2);
+// sideLengths.Add(side3);
+// switch(sideLengths.Count()) 
+// {
+//   case 1:
+//     return equila
+//     break;
+//   case 2:
+//     return iso
+//     break;
+//   default:
+//     return scalene
+//     break;
+// }
