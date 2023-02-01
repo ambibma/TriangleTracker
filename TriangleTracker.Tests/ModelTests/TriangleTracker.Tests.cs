@@ -55,12 +55,12 @@ namespace TriangleTracker.Tests
       Assert.AreEqual("Equilateral", testTriangle.TriangleType(3,3,3));
     }
 
-    // [TestMethod]
-    // public void TriangleType_HasTypeIsosceles_Isosceles()
-    // {
-    //   Triangle testTriangle = new Triangle();
-    //   Assert.AreEqual("Isosceles", testTriangle.TriangleType(3,3,5));    
-    // }
+    [TestMethod]
+    public void TriangleType_HasTypeIsosceles_Isosceles()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual("Isosceles", testTriangle.TriangleType(3,3,5));    
+    }
 
   }
 
