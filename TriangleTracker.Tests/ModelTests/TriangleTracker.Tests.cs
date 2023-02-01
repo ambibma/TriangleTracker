@@ -10,7 +10,7 @@ namespace TriangleTracker.Tests
     public void IsTriangle_HasThreeSides_True()
     {
       Triangle testTriangle = new Triangle();
-      Assert.AreEqual(true, testTriangle.IsTriangle(3,4,5));
+      Assert.AreEqual (true,testTriangle.IsTriangle(3,4,5));
     }
     [TestMethod]
     public void IsTriangle_AllSidesArePositive_True()
@@ -48,5 +48,33 @@ namespace TriangleTracker.Tests
       Triangle testTriangle = new Triangle();
       Assert.AreEqual("Scalene", testTriangle.TriangleType(3,4,5));
     }
+    [TestMethod]
+    public void TriangleType_HasTypeIsosceles_Isosceles()
+    {
+      Triangle testTriangle = new Triangle();
+      Assert.AreEqual("Isosceles", testTriangle.TriangleType(3,3,5));    
+    }
+
   }
+
 }
+// [TestMethod]
+// public void MethodTest()
+// {
+//     try
+//     {
+//         var obj = new ClassRequiringNonNullParameter( null );
+//         Assert.Fail("An exception should have been thrown");
+//     }
+//     catch (ArgumentNullException ae)
+//     {
+//         Assert.AreEqual( "Parameter cannot be null or empty.", ae.Message );
+//     }
+//     catch (Exception e)
+//     {
+//         Assert.Fail(
+//              string.Format( "Unexpected exception of type {0} caught: {1}",
+//                             e.GetType(), e.Message )
+//         );
+//     }
+// }
