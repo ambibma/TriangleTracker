@@ -52,11 +52,14 @@ namespace TriangleTracker
       {
         return "Scalene";
       } 
-      else 
+      if ((side1 == side2) && (side1 == side3)) 
+      {
+        return "Equilateral";
+      }
+      else
       {
         return "";
       }
-
     }
   }
 }
