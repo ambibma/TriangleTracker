@@ -52,7 +52,7 @@ namespace TriangleTracker
       {
         return "Scalene";
       } 
-      else
+      else 
       {
         return "";
       }
